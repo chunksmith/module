@@ -23,7 +23,7 @@ spec:
   displayName: Minecraft (Java Edition)
   game: minecraft-java
   # Kept in lockstep with module.yaml's bundle version from 2.5.0 onward.
-  version: 2.9.0
+  version: 2.10.0
   categories: [Sandbox, Survival, Building, Modded, Creative]
   # Brand color the dashboard tints this game's icon/accents with.
   accentColor: "#5b9a3e"
@@ -637,3 +637,12 @@ spec:
       type: string
       autoFromMemoryLimit:
         percent: 75
+
+    - name: JVM_XX_OPTS
+      displayName: JVM flags
+      description: >-
+        Extra JVM flags passed to java before -jar, space-separated (for
+        example Aikar's G1GC flags). Heap size belongs in JVM max heap and
+        JVM initial heap.
+      type: string
+      maxLength: 4096

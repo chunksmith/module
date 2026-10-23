@@ -49,6 +49,10 @@ above the heap wastes RAM the JVM will never touch. Automatic sizing
 needs gameplane ≥ 0.2.0-beta.6 (`gameplaneMinVersion` gates this bundle
 accordingly).
 
+Extra JVM flags (configSchema `JVM_XX_OPTS`, e.g. Aikar's G1GC flags) go
+to the JVM before `-jar`. In the dashboard both live under
+**Settings → Startup**, which also previews the resulting java command.
+
 Setting either field explicitly (e.g. `2G`, `3072M`) turns the automatic
 sizing off for that field and feeds the value straight to the itzg
 image's `-Xmx`/`-Xms` plumbing; keep an explicit max heap roughly 25%

@@ -263,6 +263,14 @@
     "defaultMessage": "JVM initial heap",
     "description": "Label of configuration field INIT_MEMORY (template.yaml spec.configSchema)"
   },
+  "config.JVM_XX_OPTS.description": {
+    "defaultMessage": "Extra JVM flags passed to java before -jar, space-separated (for example Aikar''s G1GC flags). Heap size belongs in JVM max heap and JVM initial heap.",
+    "description": "Help text of configuration field JVM_XX_OPTS (template.yaml spec.configSchema)"
+  },
+  "config.JVM_XX_OPTS.displayName": {
+    "defaultMessage": "JVM flags",
+    "description": "Label of configuration field JVM_XX_OPTS (template.yaml spec.configSchema)"
+  },
   "config.LEVEL_SEED.description": {
     "defaultMessage": "Leave blank for a random seed.",
     "description": "Help text of configuration field LEVEL_SEED (template.yaml spec.configSchema)"
